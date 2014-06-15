@@ -10,4 +10,7 @@ setopt long_list_jobs
 
 ## pager
 export PAGER=less
-export LC_CTYPE=$LANG
+
+set LC_CTYPE=en_US.UTF-8
+set LC_ALL=en_US.UTF-8
+set LANG=en_US.UTF-8
