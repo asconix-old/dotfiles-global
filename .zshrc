@@ -11,4 +11,10 @@ set LC_CTYPE=en_US.UTF-8
 set LC_ALL=en_US.UTF-8
 set LANG=en_US.UTF-8
 
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" 
+export GREP_OPTIONS='--color=auto'
+
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
+
+precmd () {print -Pn "\e]2; %~/ \a"}
+preexec () {print -Pn "\e]2; %~/ \a"}
+

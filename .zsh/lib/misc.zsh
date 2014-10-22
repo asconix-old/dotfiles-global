@@ -14,3 +14,8 @@ export PAGER=less
 set LC_CTYPE=en_US.UTF-8
 set LC_ALL=en_US.UTF-8
 set LANG=en_US.UTF-8
+
+setopt rmstarsilent
+
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_11.jdk/Contents/Home
+
