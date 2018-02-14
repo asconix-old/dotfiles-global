@@ -6,33 +6,50 @@ Dotfiles are a general approach how to customize a Unix, Linux or Mac OS X syste
 
 First of all clone this repository in your Home-Directory:
 
-    $~ cd ~
-    $~ git clone https://github.com/asconix/dotfiles
-    $~ mv dotfiles .dotfiles
+```bash
+$ cd ~
+$ git clone https://github.com/asconix/dotfiles
+$ mv dotfiles .dotfiles
+```
 
-... and symlink the configuration files for the services/applications you're running:
+... and symlink the configuration files for the services/applications you're running as described below.
 
-__Vim:__
+### Vim
 
-    $~ ln -sf .dotfiles/.vimrc
-    $~ ln -sf .dotfiles/.vim
+```bash
+~ ln -sf .dotfiles/vim/.vimrc ~/.vimrc
+$ ln -sf .dotfiles/.vim ~/.vim
+```
 
-Additionally run `git submodule init && git submodule update` before starting Vim.
+Additionally ensure that submodules are cloned before launching Vim:
 
-__zsh:__
+```bash
+$ git submodule update --init
+```
 
-    $~ ln -sf .dotfiles/.zshrc
-    $~ ln -sf .dotfiles/.zsh
-    $~ ln -sf .dotfiles/.zlogin
+### Z shell (Zsh)
 
-__wget:__
+```bash
+$ ln -sf .dotfiles/zsh/.zshrc ~/.zshrc
+$ ln -sf .dotfiles/zsh/.zsh ~/.zsh
+$ ln -sf .dotfiles/zsh/.zlogin ~/.zlogin
+```
 
-    $~ ln -sf .dotfiles/.wgetrc
+### Wget
 
-__Git:__
+```bash
+$ ln -sf .dotfiles/wget/.wgetrc ~/.wgetrc
+```
 
-    $~ ln -sf .dotfiles/.gitconfig
+### Git
 
-__Tmux:__
+```bash
+$ ln -sf .dotfiles/git/.gitconfig ~/.gitconfig
+```
 
-    $~ ln -sf .dotfiles/.tmuxrc
+### Tmux 2
+
+```bash
+$ ln -sf .dotfiles/tmux/.tmuxrc ~/.tmuxrc
+```
+
