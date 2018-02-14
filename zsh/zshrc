@@ -1,4 +1,4 @@
-export ZSH=~/etc/zsh
+export ZSH=/etc/zsh
 
 # Load all of the config files
 for config_file ($ZSH/lib/*.zsh) source $config_file
