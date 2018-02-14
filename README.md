@@ -17,7 +17,7 @@ $ mv dotfiles .dotfiles
 ### Vim
 
 ```bash
-~ ln -sf .dotfiles/vim/.vimrc ~/.vimrc
+$ ln -sf .dotfiles/vim/.vimrc ~/.vimrc
 $ ln -sf .dotfiles/.vim ~/.vim
 ```
 
