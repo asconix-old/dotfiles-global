@@ -50,7 +50,7 @@ $ ln -sf .dotfiles/git/.gitconfig ~/.gitconfig
 ### Tmux 2
 
 ```bash
-$ ln -sf .dotfiles/tmux/.tmuxrc ~/.tmuxrc
+$ ln -sf .dotfiles/tmux/tmux.conf /etc/tmux.conf
 ```
 
 ## Authors
