@@ -1,6 +1,6 @@
-# dotfiles
+# Global configurations (dotfiles)
 
-Dotfiles are a general approach how to customize a Unix, Linux or Mac OS X system. The dotfiles in this repository are my custom configurations for Vim, zsh, Tmux, Git, wget etc.
+This repository contains my custom configuration files for services and software that I use (e.g. Vim, Z shell, Tmux, Git, wget etc.). Instead of typical dotfiles, that resist in your home directory, these configuration files are meant to be used as global configuration. One of the reasons to define them as global configuration files is the easy integration into my [Nix setups](https://github.com/asconix/nixos-config).
 
 ## Installation
 
