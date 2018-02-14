@@ -1,4 +1,4 @@
-# Global configurations (dotfiles)
+# Global dotfiles
 
 This repository contains my custom configuration files for services and software that I use (e.g. Vim, Z shell, Tmux, Git, wget etc.). Instead of typical dotfiles, that resist in your home directory, these configuration files are meant to be used as global configuration. One of the reasons to define them as global configuration files is the easy integration into my [Nix setups](https://github.com/asconix/nixos-config).
 
@@ -7,9 +7,8 @@ This repository contains my custom configuration files for services and software
 First of all clone this repository in your Home-Directory:
 
 ```bash
-$ cd ~
-$ git clone https://github.com/asconix/dotfiles
-$ mv dotfiles .dotfiles
+$ cd /usr/local
+$ git clone https://github.com/asconix/dotfiles-global
 ```
 
 ... and symlink the configuration files for the services/applications you're running as described below.
@@ -17,8 +16,8 @@ $ mv dotfiles .dotfiles
 ### Vim
 
 ```bash
-$ ln -sf .dotfiles/vim/.vimrc ~/.vimrc
-$ ln -sf .dotfiles/.vim ~/.vim
+$ ln -sf /usr/local/dotfiles/vim/vimrc /etc/vimrc
+$ ln -sf /usr/local/dotfiles/vim/vim /etc/vim
 ```
 
 Additionally ensure that submodules are cloned before launching Vim:
@@ -30,26 +29,26 @@ $ git submodule update --init
 ### Z shell (Zsh)
 
 ```bash
-$ ln -sf .dotfiles/zsh/zshrc /etc/zsh/zshrc
-$ ln -sf .dotfiles/zsh/lib /etc/zsh/lib
+$ ln -sf /usr/local/dotfiles/zsh/zshrc /etc/zsh/zshrc
+$ ln -sf /usr/local/dotfiles/zsh/lib /etc/zsh/lib
 ```
 
 ### Wget
 
 ```bash
-$ ln -sf .dotfiles/wget/.wgetrc ~/.wgetrc
+$ ln -sf /usr/local/dotfiles/wget/wgetrc /usr/local/etc/wgetrc
 ```
 
 ### Git
 
 ```bash
-$ ln -sf .dotfiles/git/.gitconfig ~/.gitconfig
+$ ln -sf /usr/local/dotfiles/git/gitconfig /etc/gitconfig
 ```
 
 ### Tmux 2
 
 ```bash
-$ ln -sf .dotfiles/tmux/tmux.conf /etc/tmux.conf
+$ ln -sf /usr/local/dotfiles/tmux/tmux.conf /etc/tmux.conf
 ```
 
 ## Authors
