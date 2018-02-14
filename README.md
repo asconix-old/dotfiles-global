@@ -53,3 +53,11 @@ $ ln -sf .dotfiles/git/.gitconfig ~/.gitconfig
 $ ln -sf .dotfiles/tmux/.tmuxrc ~/.tmuxrc
 ```
 
+## Authors
+
+This collection of configuration files is managed by [Christoph Pilka](https://github.com/asconix).
+
+## License
+
+Source code in this repository is published under MIT License, see LICENSE file for full details.
+
