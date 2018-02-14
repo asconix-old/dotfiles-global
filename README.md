@@ -30,9 +30,8 @@ $ git submodule update --init
 ### Z shell (Zsh)
 
 ```bash
-$ ln -sf .dotfiles/zsh/.zshrc ~/.zshrc
-$ ln -sf .dotfiles/zsh/.zsh ~/.zsh
-$ ln -sf .dotfiles/zsh/.zlogin ~/.zlogin
+$ ln -sf .dotfiles/zsh/zshrc /etc/zsh/zshrc
+$ ln -sf .dotfiles/zsh/lib /etc/zsh/lib
 ```
 
 ### Wget
